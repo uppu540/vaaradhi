@@ -2298,12 +2298,7 @@ a.mini-contacts:hover {
   background: -webkit-linear-gradient();
   background: linear-gradient();
 }
-.hover-outline-decoration > li > a,
-> li > a .active-outline-decoration,
-> li > a .active-bg-decoration,
-> li > a .hover-bg-decoration {
-  border-radius: 3px;
-}
+
 .bg-outline-decoration > li > a,
 .main-nav > li > a .animate-wrap,
 .hover-line-decoration > li:not(.act) > a:hover .decoration-line,
