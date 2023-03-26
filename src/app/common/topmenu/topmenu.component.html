@@ -1,0 +1,86 @@
+<ul
+      id="primary-menu"
+      class="main-nav underline-decoration l-to-r-line outside-item-remove-margin"
+      role="menubar">
+      <li class="homeicon menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-1303 act first"
+        role="presentation">
+        <a href="#" data-level="1" role="menuitem">
+          <span class="menu-item-text with-icon"> <i class="fas fa-home"></i> </span>
+        </a>
+      </li>
+      <li
+        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1305 has-children"
+        role="presentation" [routerLinkActive]="['active']"
+      >
+        <a [routerLink]="'/services'" class="not-clickable-item" data-level="1" role="menuitem">
+            <span class="menu-item-text">
+                <span class="menu-text">Services</span>
+                <i class="underline"></i>
+            </span>
+        </a>
+        <ul class="sub-nav level-arrows-on" role="menubar">
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1654 first"
+            role="presentation"
+          >
+            <a
+              href="#"
+              data-level="2"
+              role="menuitem"
+              ><span class="menu-item-text"
+                ><span class="menu-text"
+                  >IT On-site &#038; Offshore Services</span
+                ></span
+              ></a
+            >
+          </li>
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1653"
+            role="presentation"
+          >
+            <a
+              href="#"
+              data-level="2"
+              role="menuitem"
+              ><span class="menu-item-text"
+                ><span class="menu-text"
+                  >BCM &#038; GRC Training Services</span
+                ></span
+              ></a
+            >
+          </li>
+        </ul>
+      </li>
+      <li
+        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1306 has-children"
+        role="presentation" [routerLinkActive]="['active']"
+      >
+        <a [routerLink]="'/about'" class="not-clickable-item" data-level="1" role="menuitem"
+          ><span class="menu-item-text"
+            ><span class="menu-text">About Us</span>
+            <i class="underline"></i></span
+          ></a>
+      </li>
+      <li
+        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1672" [routerLinkActive]="['active']"
+        role="presentation"
+      >
+        <a [routerLink]="'/career'"   data-level="1" role="menuitem"
+          ><span class="menu-item-text"
+            ><span class="menu-text">Careers</span>
+            <i class="underline"></i></span
+          ></a
+        >
+      </li>
+      <li
+        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1673"
+        role="presentation" [routerLinkActive]="['active']"
+      >
+        <a [routerLink]="'/contact'" data-level="1" role="menuitem"
+          ><span class="menu-item-text"
+            ><span class="menu-text">Contact</span>
+            <i class="underline"></i></span
+          ></a
+        >
+      </li>
+    </ul>

@@ -1,0 +1,98 @@
+.table-card{
+    background: $base-white;
+    border-radius: $border-radius-card;
+    padding: 6px 0 0 16px;
+    box-shadow: 0 2px 8px #2d2e4f0a;
+    &.nodata{
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.table-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+// FOLDERS STYLE
+
+.home-content {
+    display: flex;
+    margin: 20px 0px;
+    padding: 30px 0px;
+    .home-pic {
+        height: 300px;
+        width: 50%;
+        margin-right: 60px;
+        border-radius: 0px;
+        display: block;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .home-text {
+        width: calc(50% - 60px);
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 0px;
+            margin-bottom: 10px;
+            font-family: "Lato", Sans-serif;
+            font-style: italic;
+            line-height: 1.7em;
+        }
+    }
+}
+
+.service-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    .service-card-item {
+        width: 33.33%;
+        margin: 0px 10px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+        transform: translateY(0px);
+        .service-card-img {
+            height: 235px;
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .service-card-title {
+            color: #303030;
+            font-family: "Lato", Sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+        }
+        &.with-border {
+            .service-card-img {
+                border: 1px solid #000;
+            }
+        }
+    }
+}
+
+.footer-menu-title {
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-family: 'Lato';
+}
+
