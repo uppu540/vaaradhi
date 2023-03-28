@@ -96,3 +96,48 @@
     font-family: 'Lato';
 }
 
+
+.social-icons {
+    margin-top: 10px;
+    & > ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        display: flex;
+        & > li {
+            margin-right: 10px;
+            border-radius: 50%;
+            a {
+                height: 26px;
+                width: 26px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 28px;
+                cursor: pointer;
+                background: transparent;
+                color: white;
+                display: block;
+                border-radius: 50%;
+                overflow: hidden;
+                font-size: 10px;
+            }
+            &.fb {
+                background: #3b5998;
+                color: white;
+            }
+            &.link {
+                background: #04669a;
+                color: white;
+            }
+            &.twitter {
+                background: #00b6f1;
+                color: white;
+            }
+            &:hover {
+                a {
+                    background: #c50f04;
+                }
+            }
+        }
+    }
+}

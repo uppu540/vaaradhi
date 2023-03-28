@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { CareersComponent } from './careers/careers.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { ItOnsiteOffshoreComponent } from './it-onsite-offshore/it-onsite-offshore.component';
 import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
@@ -28,13 +29,17 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
+    path: 'it-offshore',
+    component: ItOnsiteOffshoreComponent
+  },
+  {
     path: '**', redirectTo: 'home', pathMatch: 'full'
   }
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top', useHash: false})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

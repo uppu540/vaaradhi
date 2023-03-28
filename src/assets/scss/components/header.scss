@@ -63,6 +63,15 @@
         line-height: 35px;
         justify-content: center;
     }
+    &.has-border {
+        width: 1380px;
+        min-height: 140px !important;
+        padding: 30px 60px 30px 60px;
+        border-bottom: 1px solid #939393;
+        .page-title {
+            font: normal 300 42px / 44px "Lato", Helvetica, Arial, Verdana, sans-serif;
+        }
+    }
 }
 
 .underline {
@@ -98,4 +107,8 @@
         position: sticky;
         top: 0px;
     }
+}
+
+.masthead:not(.side-header):not(.side-header-menu-icon) .header-bar {
+    max-width: 1400px !important;
 }

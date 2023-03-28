@@ -6,7 +6,24 @@
 }
 
 .page-container{
-    padding: 24px 24px 54px 24px;
+    padding: 20px 60px 20px 60px;
     max-width: $screen-width;
     margin: auto;
+}
+
+.service-content {
+    margin-top: 30px;
+    .service-inner {
+        max-width: 1140px;
+        padding: 10px;
+        margin: auto;
+        h3 {
+            font: normal 300 22px / 30px "Lato", Helvetica, Arial, Verdana, sans-serif;
+        }
+        ul {
+            padding: 0px;
+            list-style: disc;
+            margin: 0 0 10px 20px;
+        }
+    }
 }

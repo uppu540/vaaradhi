@@ -1,8 +1,12 @@
 .footer-bar{
-    max-width: 1200px;
-    margin: auto;
-    padding: 60px 0px;
-    border-top: 1px solid #000;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 60px 0 60px;
+    width: 1380px;
+    .footer-inner {
+        border-top: 1px solid #939393;
+        padding-top: 60px;
+    }
 }
 
 .footer-menu-link {

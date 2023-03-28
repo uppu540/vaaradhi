@@ -10,9 +10,9 @@
       </li>
       <li
         class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1305 has-children"
-        role="presentation" [routerLinkActive]="['active']"
+        role="presentation"  [ngClass]="{'active': activeUrl == '/it-offshore'}"
       >
-        <a [routerLink]="'/services'" class="not-clickable-item" data-level="1" role="menuitem">
+        <a class="not-clickable-item" data-level="1" role="menuitem">
             <span class="menu-item-text">
                 <span class="menu-text">Services</span>
                 <i class="underline"></i>
@@ -24,7 +24,7 @@
             role="presentation"
           >
             <a
-              href="#"
+            [routerLink]="'/it-offshore'" [ngClass]="{'active': activeUrl == '/it-offshore'}"
               data-level="2"
               role="menuitem"
               ><span class="menu-item-text"

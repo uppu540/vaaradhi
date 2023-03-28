@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AboutComponent } from './about/about.component';
@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { CareersComponent } from './careers/careers.component';
+import { ItOnsiteOffshoreComponent } from './it-onsite-offshore/it-onsite-offshore.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,14 @@ import { CareersComponent } from './careers/careers.component';
     ContactComponent,
     FooterComponent,
     ServicesComponent,
-    CareersComponent
+    CareersComponent,
+    ItOnsiteOffshoreComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy,  }],
+  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy,  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
