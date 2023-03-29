@@ -99,6 +99,15 @@
                 }
             }
         }
+        &.active {
+            & > a {
+                i {
+                    &.underline {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 
