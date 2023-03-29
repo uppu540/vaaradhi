@@ -13,6 +13,9 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { CareersComponent } from './careers/careers.component';
 import { ItOnsiteOffshoreComponent } from './it-onsite-offshore/it-onsite-offshore.component';
+import { DirectPlacementComponent } from './direct-placement/direct-placement.component';
+import { ContractStaffingComponent } from './contract-staffing/contract-staffing.component';
+import { ManagedServicesComponent } from './managed-services/managed-services.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ItOnsiteOffshoreComponent } from './it-onsite-offshore/it-onsite-offsho
     FooterComponent,
     ServicesComponent,
     CareersComponent,
-    ItOnsiteOffshoreComponent
+    ItOnsiteOffshoreComponent,
+    DirectPlacementComponent,
+    ContractStaffingComponent,
+    ManagedServicesComponent
   ],
   imports: [
     BrowserModule,

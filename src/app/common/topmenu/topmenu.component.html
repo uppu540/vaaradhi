@@ -35,16 +35,46 @@
             >
           </li>
           <li
-            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1653"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1654 first"
             role="presentation"
           >
             <a
-              href="#"
+            [routerLink]="'/direct-placement'" [ngClass]="{'active': activeUrl == '/direct-placement'}"
               data-level="2"
               role="menuitem"
               ><span class="menu-item-text"
                 ><span class="menu-text"
-                  >BCM &#038; GRC Training Services</span
+                  >Direct Placement</span
+                ></span
+              ></a
+            >
+          </li>
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1654 first"
+            role="presentation"
+          >
+            <a
+            [routerLink]="'/contract-staffing'" [ngClass]="{'active': activeUrl == '/contract-staffing'}"
+              data-level="2"
+              role="menuitem"
+              ><span class="menu-item-text"
+                ><span class="menu-text"
+                  >Contract Staffing</span
+                ></span
+              ></a
+            >
+          </li>
+          <li
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1654 first"
+            role="presentation"
+          >
+            <a
+            [routerLink]="'/managed-services'" [ngClass]="{'active': activeUrl == '/managed-services'}"
+              data-level="2"
+              role="menuitem"
+              ><span class="menu-item-text"
+                ><span class="menu-text"
+                  >Managed Services</span
                 ></span
               ></a
             >

@@ -141,3 +141,73 @@
         }
     }
 }
+
+.careers-card {
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    .careers-card-inner {
+        padding: 10px;
+        background: white;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+}
+
+.careers-list {
+    & > ul {
+        padding: 0px !important;
+        margin: 0px !important;
+        list-style: none !important;
+        & > li {
+            display: flex;
+            align-items: flex-end;
+            margin: 5px 0px 0px 0px;
+            padding: 9px 0px 9px 0px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ACACAC;
+            .job-title {
+                font-size: 22px;
+                font-weight: 600;
+                font-family: "Lato", Sans-serif;
+                color: #000;
+                line-height: 1.8rem;
+            }
+            .job-location {
+                margin: 0px 10px;
+                font-family: "Lato", Sans-serif;
+                font-style: italic;
+                line-height: 1.7em;
+
+            }
+            a {
+                color: #c50f04 !important;
+                font-family: "Lato", Sans-serif;
+                font-weight: 700;
+                line-height: 1.8rem;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &.no-flex {
+                display: block;
+                .first {
+                    margin-bottom: 10px;
+                    display: flex;
+                }
+                .second {
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: "Lato", Sans-serif;
+                        color: #000;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+            
+        }
+    }
+}
