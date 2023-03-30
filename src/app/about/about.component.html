@@ -1,9 +1,175 @@
 <div class="page-wrapper">
   <app-header></app-header>
   <div class="page-container">
-    <div class="page-header">
-      <div class="page-title">Welcome to About Us page</div>
-    </div>    
-    <app-footer></app-footer>
+    <div class="page-header has-border">
+      <div class="page-title">About Us</div>
+    </div>
+
+    <div class="service-content">
+      <div class="service-inner">
+      <h3>Who We Are</h3>
+      <p>
+        iMINDS Technology Systems is a Strategic Partner for many of the fortune 100/500 companies and is progressively involved in their Staffing, Recruitment and Trainings. Services include Training, Consulting services, Managed services, Contract to hire, Direct hire, Staff augment services. Our client base includes Fortune 100 to Fortune 500 companies across Life sciences, Healthcare, Telecom, Retail, Banking & Finance, Manufacturing, Energy-Hightech & Utilities, Travel & Hospitality, and Logistics-Warehousing
+      </p>
+      <h3>Vision</h3>
+      <p>
+        To be the best IT services company by bringing-in the best-in class solutions and services to all our esteemed Clients.
+      </p>
+      <h3>Mission</h3>
+      <p>
+        To be the preferred partner of choice in – Implementing Systems of Differentiation & Innovation. Delivering Real-Time and Adaptive solutions through Best In Class Platforms & Applications.
+      </p>
+      <h3>Our Management</h3>
+      <p>
+        iMINDS is a team of experienced professionals who have several decades of I.T experience in Top notch MNC’s. They’ve incubated multi-million dollar practices and headed operations in Top MNC’s. They’ve the passion to bring in best practices in terms of Process, Management and Technology, Industry based that are best in class only. Employees @ iMINDS are highly valued and are progressively improved/advanced with their skillsets. Highly qualified to provide services in various Niche technology areas, General Technologies, Enterprise and Legacy applications, Web Technologies and Tools. Our energetic professionals come with a strong and vast experience who are working in almost all technologies & spheres of IT.
+      </p>
+      <h3>Technically Best Brains and Advanced</h3>
+      <p>
+        iMINDS has several Frameworks, Accelerators, artifacts that are built in-house and can be custom tailored to the need of the customer.
+      </p>
+
+      <p>
+        Regular hackathons, workshop sessions encompassed with periodic trainings bring in all these Innovative ideas materialized into artifacts by the Employees of iMINDS across the Globe Always try to be ahead of the game and try to be the game changers!
+      </p>
+
+      <h3>Following is the Snapshot of a subset of the skillsets iMINDS employees are proficient in:</h3>
+      
+      <div class="header-tabs">
+        <ul>
+          <li>
+            <a (click)="showTab('general')">
+              General
+            </a>
+          </li>
+          <li>
+            <a (click)="showTab('enterprise')">
+              Enterprise
+            </a>
+          </li>
+          <li>
+            <a (click)="showTab('web')">
+              Web Technologies
+            </a>
+          </li>
+          <li>
+            <a (click)="showTab('tools')">
+              Tools
+            </a>
+          </li>
+          <li>
+            <a (click)="showTab('others')">
+              Other
+            </a>
+          </li>
+        </ul>
+      </div>
+
+        <ul *ngIf="type == 'general'" >
+          <li>
+            Java/JavaSciprt   
+          </li>
+          <li>
+            Oracle
+          </li>
+          <li>
+            Hadoop
+          </li>
+          <li>
+            Dot Net
+          </li>
+          <li>
+            SAS
+          </li>
+          <li>
+            Android/iOS
+          </li>
+        </ul>
+        <ul *ngIf="type == 'enterprise'" >
+          <li>
+            Project Management
+          </li>
+          <li>
+            Enterprise Architects
+          </li>
+          <li>
+            Data Scientists
+          </li>
+          <li>
+            Scrum Masters
+          </li>
+          <li>
+            SAP
+          </li>
+          <li>
+            Business Intelligence
+          </li>
+          <li>
+            Business Analyst
+          </li>
+          <li>
+            Salesforce
+          </li>
+        </ul>
+        <ul *ngIf="type == 'web'" >
+          <li>
+            UI   
+          </li>
+          <li>
+            PHP
+          </li>
+          <li>
+            PHYTHON
+          </li>
+        </ul>
+        <ul *ngIf="type == 'tools'" >
+          <li>
+            Middleware Technologies ( Open Source, IBM Stack, Oracle Stack, Tibco, webMethods, DELL BHOOMI)
+          </li>
+          <li>
+            Cognos
+          </li>
+          <li>
+            Tableau
+          </li>
+          <li>
+            Informatica
+          </li>
+          <li>
+            Tibco
+          </li>
+          <li>
+            WebSphere
+          </li>
+        </ul>
+        <ul *ngIf="type == 'others'" >
+          <li>
+            Microsoft Server 2000 – 2016
+          </li>
+          <li>
+            Microsoft Exchange Server 2000 – 2016 / Microsoft Office 365
+          </li>
+          <li>
+            Mobile Device Management (MobileIron, XenMobile, Airwatch)
+          </li>
+          <li>
+            Microsoft SharePoint 2010 – 2016
+          </li>
+          <li>
+            BlackBerry Enterprise Service 5 – 12
+          </li>
+          <li>
+            Server virtualization (VMWare, Citrix, Azure)
+          </li>
+          <li>
+            Hardware (HP-/DELL Server, Apple, Notebooks, Cell Phones, Tablets)
+          </li>
+          <li>
+            Software (MS Windows 7 – 10, OS X, MS Office 97 – 2016, Linux, admin tools, user software)
+          </li>
+        </ul>
+      </div>
+    </div>
+
   </div>
+  <app-footer></app-footer>
 </div>

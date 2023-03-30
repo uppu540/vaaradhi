@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  type: any = '';
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  showTab(value: any){
+    this.type = value;
+  }
+
 
 }

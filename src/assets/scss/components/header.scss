@@ -115,9 +115,13 @@
     &.fixed {
         position: sticky;
         top: 0px;
+        .header-bar {
+            border-bottom: none;
+        }
     }
 }
 
 .masthead:not(.side-header):not(.side-header-menu-icon) .header-bar {
     max-width: 1400px !important;
+    border-bottom: 1px solid #939393;
 }
