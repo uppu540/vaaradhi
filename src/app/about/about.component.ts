@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  type: any = '';
+  type: any = 'general';
   constructor() { }
 
   ngOnInit(): void {

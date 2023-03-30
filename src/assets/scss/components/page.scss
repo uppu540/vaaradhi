@@ -35,6 +35,10 @@
             margin: 0 0 10px 20px;
         }
         .header-tabs {
+            padding: 10px;
+            background: rgba(10,10,10,0.15);
+            margin-bottom: 20px;
+            margin-top: 20px;
             & > ul {
                 padding: 0px;
                 margin: 0px;
@@ -44,6 +48,26 @@
                     margin: 0px 10px;
                     a {
                         padding: 10px;
+                        position: relative;
+                        text-decoration: none;
+                        color: $base-text-900;
+                        cursor: pointer;
+                        font-weight: 500;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            background: transparent;
+                            display: block;
+                            bottom: 5px;
+                            left: 0px;
+                        }
+                        &.active {
+                            &:before {
+                                background: #c13128;
+                            }
+                        }
                     }
                 }
             }
