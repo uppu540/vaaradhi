@@ -200,6 +200,7 @@
     transition: transform .5s ease;
     transform: translate3d(130%,0,0);
     overflow: hidden;
+    display: none;
     .mobile-menu {
         width: calc(330px - 13px);
         padding: 45px 15px 30px 30px;
@@ -240,5 +241,7 @@
     &.active {
         transform: translate3d(30%,0,0);
     }
-    
+    @media(max-width: 450px) {
+        display: block;
+    }
 }
