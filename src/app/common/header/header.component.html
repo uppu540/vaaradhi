@@ -8,3 +8,28 @@
     <app-topmenu></app-topmenu>
   </header>
 </div>
+
+<div class="mobile-header-menu" id="mobile-menu" >
+  <div class="mobile-header-inner">
+    <div class="mobile-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Varaadhi Consulting Services"/>
+      </a>
+    </div>
+  
+    <div class="mobile-navigation">
+      <div class="toggle-btn" (click)="showMenu()">
+        <i class="far fa-bars"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile-sidebar">
+  <div class="mobile-menu">
+    <div class="mobile-header-close" (click)="showMenu()">
+      <i class="far fa-times"></i>
+    </div>
+    <app-topmenu [type]="'mobile'"></app-topmenu>
+  </div>
+</div>

@@ -7,6 +7,9 @@
         border-top: 1px solid #939393;
         padding-top: 60px;
     }
+    @media(max-width: 450px) {
+        padding: 0px 30px;
+    }
 }
 
 .footer-menu-link {

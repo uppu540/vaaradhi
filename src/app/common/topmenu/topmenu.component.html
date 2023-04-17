@@ -1,7 +1,7 @@
 <ul
       id="primary-menu"
       class="main-nav underline-decoration l-to-r-line outside-item-remove-margin"
-      role="menubar">
+      role="menubar"  [ngClass]="{'mobile-menu-items': type == 'mobile'}" >
       <li class="homeicon menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10 current_page_item menu-item-1303 act first"
         role="presentation">
         <a href="#" data-level="1" role="menuitem">
@@ -114,3 +114,5 @@
         >
       </li>
     </ul>
+
+

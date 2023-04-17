@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+declare var $:any;
 
 @Component({
   selector: 'app-topmenu',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./topmenu.component.scss']
 })
 export class TopmenuComponent implements OnInit {
-
+  @Input() type: any = '';
   routeActive: any = '';
   activeUrl = '';
 
@@ -22,6 +23,10 @@ export class TopmenuComponent implements OnInit {
   ngOnInit(): void {
     console.log(this.router);
     this.activeUrl = this.router.url ? this.router.url: '';
+
+    $('#primary-menu').on('click', 'li', function (event: any) {
+      alert('hello');
+    });
     
 
     this.topmenuData = [

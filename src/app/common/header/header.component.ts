@@ -23,4 +23,8 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  showMenu() {
+    $('.mobile-sidebar').toggleClass('active');
+  }
+
 }

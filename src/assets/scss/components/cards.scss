@@ -49,6 +49,19 @@
             line-height: 1.7em;
         }
     }
+    @media(max-width: 450px) {
+        margin: 0px;
+        padding: 10px 0px;
+        display: block;
+        .home-pic {
+            width: 100%;
+            margin-right: 0px;
+        }
+        .home-text {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
 }
 
 .service-card {
@@ -86,6 +99,14 @@
             .service-card-img {
                 border: 1px solid #000;
             }
+        }
+    }
+    @media(max-width: 450px) {
+        display: block;
+        .service-card-item {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -152,6 +173,10 @@
         background: white;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     }
+    @media(max-width: 450px) {
+        max-width: inherit;
+        padding: 0px;
+    }
 }
 
 .careers-list {
@@ -210,6 +235,21 @@
             
         }
     }
+    @media(max-width: 450px) {
+            & > ul {
+                & > li {
+                    display: block;
+                    .job-location {
+                        margin: 10px 0px;
+                    }
+                    &.no-flex {
+                        .first {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
 }
 
 .contact-section {
@@ -291,6 +331,31 @@
             .text-container {
                 text-align: left;
             }
+        }
+    }
+    @media(max-width: 450px) { 
+        display: block;
+        max-width: inherit;
+        margin: 0px;
+        .contact-section-item {
+            width: 100%;
+            .text-container {
+                text-align: left;
+            }
+            &.second {
+                width: 100%;
+            }
+            &.third {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.contact-item-list {
+    @media(max-width: 450px) { 
+        .contact-info {
+            padding: 0px;
         }
     }
 }
