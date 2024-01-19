@@ -1,0 +1,161 @@
+input {
+    &.form-control {
+        border-radius: $border-radius-reg;
+        border-color: $border-color;
+        padding: 4px 10px;
+        color: $base-text-900;
+        height: 44px;
+        font-size: $text-size-reg;
+
+        &::placeholder {
+            color: $base-text-100;
+        }
+
+        &:focus,
+        &:active,
+        &.active {
+            border-color: $primary-blue-900;
+            background: transparent;
+            box-shadow: none;
+        }
+    }
+}
+
+.form-label {
+    font-size: $text-size-reg;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-regular;
+    color: $base-text-400;
+    margin-block-end: 4px;
+    display: block;
+
+    &.field-required {
+        &:after {
+            content: '*';
+            display: inline-block;
+            vertical-align: top;
+            color: $base-red;
+            padding-inline-start: 2px;
+        }
+    }
+}
+
+.form-group {
+    margin-block-end: 16px;
+    .dropdown{
+        .dropdown-menu{
+            max-width: initial;
+            width: 100%;
+        }
+    }
+
+    &.lg {
+        margin-block-end: 24px;
+    }
+}
+
+.input-group-append {
+    position: relative;
+
+    .icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        font-size: $text-size-sm;
+        text-align: center;
+    }
+}
+
+.input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    &-prepend{
+        margin-inline-end: -1px;
+        display: flex;
+        .input-group-text{
+            background-color: $base-white;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #adb2b8!important;
+            color: #adb2b8;
+            font-size: $text-size-reg;
+            font-weight: $font-weight-regular;
+            border-right: 0px;
+            transition: border-color .15s ease-in-out,
+            box-shadow .15s ease-in-out;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    &-append{
+        margin-inline-end: -1px;
+        display: flex;
+        & > .input-group-text{
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .input-group-text{
+            background-color: $base-white;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #adb2b8!important;
+            color: #adb2b8;
+            font-size: $text-size-reg;
+            font-weight: $font-weight-regular;
+            border-left: 0px;
+            transition: border-color .15s ease-in-out,
+            box-shadow .15s ease-in-out;
+        }
+    }
+    input{
+        height: 44px;
+        padding: 6px;
+        border-color: #adb2b8;
+    }
+}
+
+.input-group-both{
+    .form-control{
+        border-left: 0;
+        border-right: 0;
+    }
+    .input-gruop-append{
+        background-color: $base-white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #adb2b8!important;
+        color: #adb2b8;
+        font-size: $text-size-reg;
+        font-weight: $font-weight-regular;
+        border-left: 0px;
+        transition: border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    }
+    .input-gruop-prepend{
+        background-color: $base-white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #adb2b8!important;
+        color: #adb2b8;
+        font-size: $text-size-reg;
+        font-weight: $font-weight-regular;
+        border-right: 0px;
+        transition: border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    }
+}
+
+.input-group-both:focus-within{
+    .input-group-prepend,.input-group-append{
+        .input-group-text{
+            border-color: $primary-blue-900 !important;
+        }
+    }
+}

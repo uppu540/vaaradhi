@@ -24,9 +24,9 @@ export class TopmenuComponent implements OnInit {
     console.log(this.router);
     this.activeUrl = this.router.url ? this.router.url: '';
 
-    $('#primary-menu').on('click', 'li', function (event: any) {
-      alert('hello');
-    });
+    // $('#primary-menu').on('click', 'li', function (event: any) {
+    //   alert('hello');
+    // });
     
 
     this.topmenuData = [

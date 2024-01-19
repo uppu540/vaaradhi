@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prod": "npx ng run dallas:serve --configuration=production",
+    "live": "ng build --configuration production"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +22,7 @@
     "@angular/router": "~13.2.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "firebase": "^10.7.2",
     "install": "^0.13.0",
     "jquery": "^3.6.4",
     "npm": "^9.6.2",

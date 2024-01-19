@@ -1,0 +1,361 @@
+.table-card{
+    background: $base-white;
+    border-radius: $border-radius-card;
+    padding: 6px 0 0 16px;
+    box-shadow: 0 2px 8px #2d2e4f0a;
+    &.nodata{
+        min-height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.table-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+// FOLDERS STYLE
+
+.home-content {
+    display: flex;
+    margin: 20px 0px;
+    padding: 30px 0px;
+    .home-pic {
+        height: 300px;
+        width: 50%;
+        margin-right: 60px;
+        border-radius: 0px;
+        display: block;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .home-text {
+        width: calc(50% - 60px);
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 0px;
+            margin-bottom: 10px;
+            font-family: "Lato", Sans-serif;
+            font-style: italic;
+            line-height: 1.7em;
+        }
+    }
+    @media(max-width: 450px) {
+        margin: 0px;
+        padding: 10px 0px;
+        display: block;
+        .home-pic {
+            width: 100%;
+            margin-right: 0px;
+        }
+        .home-text {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+.service-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    .service-card-item {
+        width: 33.33%;
+        margin: 0px 10px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+        transform: translateY(0px);
+        .service-card-img {
+            height: 235px;
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .service-card-title {
+            color: #303030;
+            font-family: "Lato", Sans-serif;
+            font-size: 17px;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+        }
+        &.with-border {
+            .service-card-img {
+                border: 1px solid #000;
+            }
+        }
+    }
+    @media(max-width: 450px) {
+        display: block;
+        .service-card-item {
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.footer-menu-title {
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-family: 'Lato';
+}
+
+
+.social-icons {
+    margin-top: 10px;
+    & > ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        display: flex;
+        & > li {
+            margin-right: 10px;
+            border-radius: 50%;
+            a {
+                height: 26px;
+                width: 26px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 28px;
+                cursor: pointer;
+                background: transparent;
+                color: white;
+                display: block;
+                border-radius: 50%;
+                overflow: hidden;
+                font-size: 10px;
+            }
+            &.fb {
+                background: #3b5998;
+                color: white;
+            }
+            &.link {
+                background: #04669a;
+                color: white;
+            }
+            &.twitter {
+                background: #00b6f1;
+                color: white;
+            }
+            &:hover {
+                a {
+                    background: #c50f04;
+                }
+            }
+        }
+    }
+}
+
+.careers-card {
+    max-width: 1140px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    .careers-card-inner {
+        padding: 10px;
+        background: white;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    }
+    @media(max-width: 450px) {
+        max-width: inherit;
+        padding: 0px;
+    }
+}
+
+.careers-list {
+    & > ul {
+        padding: 0px !important;
+        margin: 0px !important;
+        list-style: none !important;
+        & > li {
+            display: flex;
+            align-items: flex-end;
+            margin: 5px 0px 0px 0px;
+            padding: 9px 0px 9px 0px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ACACAC;
+            .job-title {
+                font-size: 22px;
+                font-weight: 600;
+                font-family: "Lato", Sans-serif;
+                color: #000;
+                line-height: 1.8rem;
+            }
+            .job-location {
+                margin: 0px 10px;
+                font-family: "Lato", Sans-serif;
+                font-style: italic;
+                line-height: 1.7em;
+
+            }
+            a {
+                color: #c50f04 !important;
+                font-family: "Lato", Sans-serif;
+                font-weight: 700;
+                line-height: 1.8rem;
+                cursor: pointer;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &.no-flex {
+                display: block;
+                .first {
+                    margin-bottom: 10px;
+                    display: flex;
+                }
+                .second {
+                    p {
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: "Lato", Sans-serif;
+                        color: #000;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    @media(max-width: 450px) {
+            & > ul {
+                & > li {
+                    display: block;
+                    .job-location {
+                        margin: 10px 0px;
+                    }
+                    &.no-flex {
+                        .first {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+}
+
+.contact-section {
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    .contact-section-item {
+        width: 22.717%;
+        padding: 10px;
+        .text-container {
+            color: #282828;
+            font-family: "Lato", Sans-serif;
+            font-size: 36px;
+            font-weight: 300;
+            line-height: 30px;
+            margin: 0px 20px 25px 0px;
+            text-align: right;
+        }
+        .contact-form {
+            width: 100%;
+            label {
+                font-family: "Lato";
+                font-size: 15px;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 0px;
+                display: block;
+                &.field-required {
+                    position: relative;
+                    &:after{
+                        content: "*";
+                        position: absolute;
+                        font-size: 14px;
+                        color: #333333;
+                    }
+                }
+            }
+            input {
+                background-color: #ffffff;
+                border-color: rgba(0, 0, 0, 0.12);
+                border-width: 1px 1px 1px 1px;
+                border-radius: 2px 2px 2px 2px;
+                font-size: 16px;
+                color: #333333;
+                font-family: "Lato";
+                font-weight: 400;
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+                resize: none;
+            }
+            .contact-btn {
+                font-family: "Lato", Sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 1.8px;
+                border-radius: 2px 2px 2px 2px;
+                padding: 12px 16px 12px 16px;
+                background-color: #666666;
+                color: #ffffff;
+                border-color: transparent;
+                transition: 0.3s all ease;
+                &:hover {
+                    background-color: #444444;
+                }
+            }
+        }
+        &.second {
+            width: 42.124%;
+            
+        }
+        &.third {
+            width: 34.823%;
+            .text-container {
+                text-align: left;
+            }
+        }
+    }
+    @media(max-width: 450px) { 
+        display: block;
+        max-width: inherit;
+        margin: 0px;
+        .contact-section-item {
+            width: 100%;
+            .text-container {
+                text-align: left;
+            }
+            &.second {
+                width: 100%;
+            }
+            &.third {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.contact-item-list {
+    @media(max-width: 450px) { 
+        .contact-info {
+            padding: 0px;
+        }
+    }
+}
